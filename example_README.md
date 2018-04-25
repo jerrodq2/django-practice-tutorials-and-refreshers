@@ -5,8 +5,12 @@
 Provide a short description of what the purpose of this project is
 
 
+## Linked To Any Other Django projects
+N/A
+
+
 ## Environment Information
 * Python version:
 * Django version:
 * Relevant url:
-* Other relevant info: 
+* Other relevant info:
