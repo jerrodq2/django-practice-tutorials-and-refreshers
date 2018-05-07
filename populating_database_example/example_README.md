@@ -1,6 +1,8 @@
 # Overview/Purpose of this Django Project
 Purpose is a simple demonstration of different ways you can pre-populate the database
 
+## Other Useful Info/Directions
+
 
 ## Linked To Any Other Django projects
 N/A
