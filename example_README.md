@@ -4,6 +4,8 @@
 # Overview/Purpose of this Django Project
 Provide a short description of what the purpose of this project is
 
+## Other Useful Info/Directions
+
 
 ## Linked To Any Other Django projects
 N/A
