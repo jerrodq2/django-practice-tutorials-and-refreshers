@@ -2,6 +2,7 @@
 Purpose is a simple demonstration of different ways you can pre-populate the database
 
 ## Other Useful Info/Directions
+A crude yet simple example is the 'populate_users.py' file in the project directory. by running 'python populate_users.py', it will create 10 users via faker. Install with 'pip install faker' if necessary.
 
 
 ## Linked To Any Other Django projects
