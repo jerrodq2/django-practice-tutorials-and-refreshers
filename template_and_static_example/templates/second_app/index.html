@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>second_app</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'second_app/main.css' %}">
+  </head>
+  <body>
+    <h1>This is the second_app's index.html</h1>
+
+    <a href="{% url 'basic_app:index' %}">Go to basic_app</a>
+  </body>
+</html>
