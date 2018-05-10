@@ -7,7 +7,7 @@ Each folder is it's own Django project and works independenlty of the others, th
 ## Note
 Due to most of these using Django version 2.0.4, the syntax of some things (such as using url vs path in the urls.py files) may be different than what you normally use
 
-## Projects In Directory
+## List of Projects In Directory
 Note: The below projects are followed by what they show or what you can get a refresher from by looking at them.
 
 * django-directory-example-project
@@ -21,3 +21,7 @@ Note: The below projects are followed by what they show or what you can get a re
   * shows different ways of organizing and using templates and static files
   * shows default way and how to setup a global folders in the main project directory for each
   * also demonstrates a simple use of using namespaces and named routes
+
+* forms_and_form_validation
+  * shows use of the built in forms
+  * also shows different methods of validating django forms, with custom validations, and built in 'clean' methods
