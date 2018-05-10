@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <h1>Users Form</h1>
+    <div class="container">
+
+
+      <form method="POST">
+          <!-- inserting the form model with the below line. the 'as_p' part simply puts each input in a <p></p> tag, it's not necessary -->
+          {{form.as_p}}
+          <!-- The below token is needed for any form submission in Django -->
+          {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+
+      <!-- The Below form is the raw html equivalent of the above code -->
+
+      <!-- <form method="POST">
+        <p><label for="id_name">Name:</label> <input type="text" name="name" required="" id="id_name"></p>
+        <p><label for="id_email">Email:</label> <input type="email" name="email" required="" id="id_email"></p>
+        <p><label for="id_verify_email">Enter your email again:</label> <input type="email" name="verify_email" required="" id="id_verify_email"></p>
+        <p><label for="id_text">Text:</label> <textarea name="text" cols="40" rows="10" required="" id="id_text"></textarea></p>
+        <input type="hidden" name="csrfmiddlewaretoken" value="6FxZzMYQ7eK1Z0ohzNqpVuayiUGQ6wqlhGhVsKgVW86bw09CdDGSKH4BOZFYlk1T">
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form> -->
+
+
+
+    </div>
+
+  </body>
+</html>
