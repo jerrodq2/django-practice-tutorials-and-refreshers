@@ -19,5 +19,7 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'^users/', include(('users.urls', 'users'), namespace='users')),
     url(r'^second/', include(('second_app.urls', 'second_app'), namespace='second')),
+    url(r'^third/', include(('third_app.urls', 'third_app'), namespace='third')),
+    url(r'^fourth/', include(('fourth_app.urls', 'fourth_app'), namespace='fourth')),
     url(r'^admin/', admin.site.urls),
 ]
