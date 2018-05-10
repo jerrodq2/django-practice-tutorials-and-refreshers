@@ -8,7 +8,7 @@ class FourthForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
 
 
-    # when you have a method title 'clean' it can be used to validate the entire form, it is automatically activated.  Here we just check that email matches, we could do much more.
+    # when you have a method titled 'clean' it can be used to validate the entire form, it is automatically activated.  Here we just check that email matches, we could also validate other inputs.
     def clean(self):
         # using super() below grabs all the clean data for the form
         all_clean_data = super().clean()
