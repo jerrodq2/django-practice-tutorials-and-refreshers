@@ -18,5 +18,6 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^users/', include(('users.urls', 'users'), namespace='users')),
+    url(r'^second/', include(('second_app.urls', 'second_app'), namespace='second')),
     url(r'^admin/', admin.site.urls),
 ]
