@@ -7,7 +7,7 @@ Each folder is it's own Django project and works independenlty of the others, th
 ## Note
 Due to most of these using Django version 2.0.4, the syntax of some things (such as using url vs path in the urls.py files) may be different than what you normally use
 
-## Projects In Directory
+## List of Projects In Directory
 Note: The below projects are followed by what they show or what you can get a refresher from by looking at them.
 
 * django-directory-example-project
