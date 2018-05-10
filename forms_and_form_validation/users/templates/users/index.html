@@ -11,7 +11,7 @@
     <div class="container">
 
 
-      <form method="POST">
+      <form action="{% url 'users:result' %}" method="POST">
           <!-- inserting the form model with the below line. the 'as_p' part simply puts each input in a <p></p> tag, it's not necessary -->
           {{form.as_p}}
           <!-- The below token is needed for any form submission in Django -->
