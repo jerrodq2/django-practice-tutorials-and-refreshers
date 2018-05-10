@@ -12,7 +12,7 @@ def result(request):
     if request.method == 'POST':
         form = forms.FourthForm(request.POST)
         if form.is_valid():
-            
+            # DO SOMETHING CODE
             print("VALIDATION SUCCESS!")
             print("NAME: "+form.cleaned_data['name'])
             print("EMAIL: "+form.cleaned_data['email'])
