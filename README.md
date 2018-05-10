@@ -21,3 +21,7 @@ Note: The below projects are followed by what they show or what you can get a re
   * shows different ways of organizing and using templates and static files
   * shows default way and how to setup a global folders in the main project directory for each
   * also demonstrates a simple use of using namespaces and named routes
+
+* forms_and_form_validation
+  * shows use of the built in forms
+  * also shows different methods of validating django forms, with custom validations, and built in 'clean' methods
