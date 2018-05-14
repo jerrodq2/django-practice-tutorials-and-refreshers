@@ -29,3 +29,4 @@ Note: The below projects are followed by what they show or what you can get a re
 * model_forms
   * shows use of built in model forms
   * shows examples of how to specify, include, and exclude certain fields from the model and save directly to the model
+  * Also shows the difference between user.save(commit = True) and user.save(commit = False)

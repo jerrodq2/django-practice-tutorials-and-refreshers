@@ -22,4 +22,4 @@ class IncludedUserForm(forms.ModelForm):
     class Meta():
         model = User
         # This is how you include specific fields, all others will be excluded by default
-        fields = ('first', 'email') # specify which fields get included
+        fields = ['first', 'email'] # specify which fields get included
