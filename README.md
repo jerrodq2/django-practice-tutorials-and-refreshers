@@ -25,3 +25,7 @@ Note: The below projects are followed by what they show or what you can get a re
 * forms_and_form_validation
   * shows use of the built in forms
   * also shows different methods of validating django forms, with custom validations, and built in 'clean' methods
+
+* model_forms
+  * shows use of built in model forms
+  * shows examples of how to specify, include, and exclude certain fields from the model and save directly to the model
