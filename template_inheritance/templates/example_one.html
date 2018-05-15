@@ -1,0 +1,9 @@
+<!DOCTYPE html> <!-- Still have to mark this as an html file -->
+
+{% extends "base.html" %} <!-- specify the template you are extending, you specify the route location, so if it was in the app "base_app" it would be "extends 'base_app/base.html'" -->
+
+  {% block body_block %}
+    <!-- This is the content that will be injected into the extended template -->
+    <h1>Welcome to Example One</h1>
+    <a href="{% url 'temp:two' %}">Go to second template</a>
+  {% endblock %}
