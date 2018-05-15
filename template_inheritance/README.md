@@ -2,7 +2,7 @@
 To demonstrate template inheritance, using a base template and other templates inheriting or extending the base.
 
 ## Other Useful Info/Directions
-
+See the templates folder for examples of inheritance and extending templates
 
 ## Linked To Any Other Django projects
 N/A
