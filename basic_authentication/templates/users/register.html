@@ -1,7 +1,7 @@
 {% extends 'users/base.html' %}
 {% load staticfiles %}
 
-  {% body body_block %}
+  {% block body_block %}
 
     <div class="jumbotron">
       {% if registered %}
@@ -9,7 +9,7 @@
       {% else %}
       <h1>Register Here!</h1>
       <h3>Fill out the form:</h3>
-      <form class="" action="{% url 'users:register' %}" method="post">
+      <form class="" action="{% url 'users:create' %}" method="post">
         {% csrf_token %}
         {{ user_form.as_p }}
         {{ profile_form.as_p }}
