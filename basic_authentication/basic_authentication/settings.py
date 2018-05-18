@@ -88,12 +88,14 @@ DATABASES = {
 # Password validation *************************************************************************
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 # Below are the hashing algorithms we user. We start with the strongest, Argon2, and work our way down the list if that doesn't work, with the last being built into django.
+# If necessary install with: pip install bcrypt as well as: pip install django[argon2]
+# superuser for this project is username: jquintana, password: testpassword
 PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.Argon2PasswordHasher'
-    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher'
-    'django.contrib.auth.hashers.BCryptPasswordHasher'
-    'django.contrib.auth.hashers.PBKDF2PasswordHasher'
-    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher'
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
 
 AUTH_PASSWORD_VALIDATORS = [

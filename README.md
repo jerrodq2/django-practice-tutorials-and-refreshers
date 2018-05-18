@@ -34,3 +34,9 @@ Note: The below projects are followed by what they show or what you can get a re
 * template_inheritance
   * demonstrates the use of template inheritance
   * Shows how to extend a base template
+
+* basic_authentication
+  * demonstrates basic user Authentication
+  * shows how to use multiple hashing Algorithms
+  * shows how to use multiple forms
+  * shows how to extend the default User model with a one to one relationship
