@@ -14,8 +14,10 @@
           <li><a class="navbar-link" href="{% url 'users:register' %}">Register</a></li>
           <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
 
+
           <!-- user.is_authenticated is a built in method to check if they are logged in, or hit the user.authenticate method we call during the login process -->
           {% if user.is_authenticated %}
+            <li><a class="navbar-link" href="{% url 'users:test_page' %}">Test Page</a></li>
             <li><a class="navbar-link" href="{% url 'users:user_logout' %}">Logout</a></li>
           {% else %}
             <li><a class="navbar-link" href="{% url 'users:login_page' %}">Login</a></li>

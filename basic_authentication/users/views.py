@@ -2,23 +2,23 @@ from django.shortcuts import render, redirect
 from .forms import *
 from .models import *
 
-# You can use this decorator to require users to be logged in when they go to a specific page
+# You can use this decorator to require users to be logged in when they go to a specific page/view method
 from django.contrib.auth.decorators import login_required
-# you use these functions for authentication.
+# you use these functions for authentication. Make sure not to name any of your below methods after these or you will overwrite them.
 from django.contrib.auth import authenticate, login, logout
+
 
 # Create your views here.
 def index(request):
     return render(request, 'users/index.html')
 
 # A view used to test the built in login_required method. To use decorators, we simply write them one line above the method we want them to affect
-@login_required
+@login_required #have to be logged in to see this page
 def test_page(request):
     return render(request, 'users/test_page.html')
 
+
 def register(request):
-    if 'registered' not in request.session:
-        request.session['registered'] = False
     context = {
         'user_form': UserForm(),
         'profile_form': UserProfileForm()
@@ -45,7 +45,6 @@ def create(request):
                 profile.profile_pic = request.FILES['profile_pic']
 
             profile.save()
-            request.session['registered'] = True
             return redirect('users:index')
         else:
             print(user_form.errors, profile_form.errors)
@@ -56,6 +55,7 @@ def create(request):
 
 def login_page(request):
     return render(request, 'users/login.html')
+
 
 # make sure not to name your methods after something you import, we import the 'login' function at the top
 def user_login(request):
