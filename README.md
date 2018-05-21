@@ -36,7 +36,10 @@ Note: The below projects are followed by what they show or what you can get a re
   * Shows how to extend a base template
 
 * basic_authentication
-  * demonstrates basic user Authentication
+  * demonstrates basic user Authentication and registration/login
   * shows how to use multiple hashing Algorithms
   * shows how to use multiple forms
   * shows how to extend the default User model with a one to one relationship
+  * shows how to save user uploaded images
+  * demonstrate the use of built in django methods such as login_required, authenticate, login, and logout
+  * demonstrates using the built in is_authenticated method in the templates to check if the user is logged in.
