@@ -8,7 +8,7 @@ Each folder is it's own Django project and works independenlty of the others, th
 Due to most of these using Django version 2.0.4, the syntax of some things (such as using url vs path in the urls.py files) may be different than what you normally use
 
 ## List of Projects In Directory
-Note: The below projects are followed by what they show or what you can get a refresher from by looking at them.
+Note: The below projects are followed by what they show or what you can get a refresher from by looking at them. They are listed in the order they were created.
 
 * django-directory-example-project
   * demonstrates more sophisticated setup of project directory
@@ -34,3 +34,12 @@ Note: The below projects are followed by what they show or what you can get a re
 * template_inheritance
   * demonstrates the use of template inheritance
   * Shows how to extend a base template
+
+* basic_authentication
+  * demonstrates basic user Authentication and registration/login
+  * shows how to use multiple hashing Algorithms
+  * shows how to use multiple forms
+  * shows how to extend the default User model with a one to one relationship
+  * shows how to save user uploaded images
+  * demonstrate the use of built in django methods such as login_required, authenticate, login, and logout
+  * demonstrates using the built in is_authenticated method in the templates to check if the user is logged in.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Users App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class = 'navbar navbar-default navbar-static-top'>
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-brand" href="{% url 'users:index' %}">Home</a></li>
+          <li><a class="navbar-link" href="{% url 'users:register' %}">Register</a></li>
+          <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+
+
+          <!-- user.is_authenticated is a built in method to check if they are logged in, or hit the user.authenticate method we call during the login process -->
+          {% if user.is_authenticated %}
+            <li><a class="navbar-link" href="{% url 'users:test_page' %}">Test Page</a></li>
+            <li><a class="navbar-link" href="{% url 'users:user_logout' %}">Logout</a></li>
+          {% else %}
+            <li><a class="navbar-link" href="{% url 'users:login_page' %}">Login</a></li>
+          {% endif %}
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      {% block body_block %}
+      {% endblock %}
+    </div>
+
+
+  </body>
+</html>
