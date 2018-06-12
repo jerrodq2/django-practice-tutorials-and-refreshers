@@ -44,5 +44,5 @@ Note: The below projects are followed by what they show or what you can get a re
   * demonstrate the use of built in django methods such as login_required, authenticate, login, and logout
   * demonstrates using the built in is_authenticated method in the templates to check if the user is logged in.
 
-* blog_clone_project
+* my_blog_clone_project
 	* clone project
